@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <style>
+        /* 1. Eliment Selector */
+
+        p {
+            color: red;
+        }
+
+        /* 2. Class Selector */
+
+        .h1 {
+            color: yellow;
+        }
+
+        /* 3. Id Selector */
+
+        #imid {
+            color: blue;
+        }
+
+        /* 4. Attribute Selector */
+
+        a[href="#"] {
+            background-color: black;
+            padding: 10px;
+            color: #fff;
+        }
+
+        /* 5. Descendant Selector */
+
+        .kk p {
+            color: blueviolet;
+        }
+
+        /* 6. Child Direct Selector */
+
+        .direcChilds>p {
+            color: chartreuse;
+        }
+
+        /* 7. Adjacent Selector */
+
+        .kjk p+h1 {
+            color: cyan;
+        }
+
+        /* 8. General Sibling Selector */
+
+        .imid~h3 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p>1. Eliment Selector</p>
+    <h1 class="h1">2. Class Selector</h1>
+    <h2 id="imid">3. Id Selector</h2>
+
+    <h3>General Selector</h3>
+
+    <h3>General Selector</h3>
+    <h3>General Selector</h3>
+    <h3>General Selector</h3>
+
+    <a href="#"> 4. Attribute Selector</a>
+
+    <div class="kk">
+        <p>5. Descendant Selector</p>
+    </div>
+
+    <div class="direcChilds">
+        <p>6. Direct Child Selector</p>
+        <div class="pp">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sunt sed delectus est expedita illo
+                nisi ratione ex! Deserunt nam adipisci placeat officia inventore, fugiat maxime optio mollitia.
+                Repellat, corrupti.</p>
+        </div>
+    </div>
+
+    <div class="kjk">
+        <p>.</p>
+        <h1>Adjacent Sibling Selector</h1>
+    </div>
+</body>
+
+</html>
